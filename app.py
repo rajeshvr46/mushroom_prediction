@@ -1,11 +1,8 @@
-
-from altair import Url
 import pandas as pd
 import numpy as np
 import streamlit as st
-
+import joblib
 from label import encode
-
 st.set_page_config(page_title='Mushroom Prediction')
 st.title('Mushrooms prediction🍄')  
 st.markdown('lets find out your mushrooms edible or not🥰')
@@ -23,13 +20,10 @@ if upload_file:
     st.header('Your Prediction is done...')
     st.dataframe(result)
     csv = result.to_csv(index=False).encode('utf-8')
-
     st.download_button(
         label="download data as csv",
         data=csv,
         file_name='mushrooms_result.csv',
         mime='text/csv',
     )
-
-
 st.markdown('..........**``Created by Rajesh``**.............')
