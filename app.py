@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import streamlit as st
 from label import encode
+import joblib as jb
 st.set_page_config(page_title='Mushroom Prediction')
 st.title('Mushrooms prediction🍄')  
 st.markdown('lets find out your mushrooms edible or not🥰')
