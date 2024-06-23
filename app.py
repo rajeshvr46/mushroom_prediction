@@ -2,7 +2,6 @@
 from altair import Url
 import pandas as pd
 import numpy as np
-from sklearn.calibration import LabelEncoder
 import streamlit as st
 import joblib
 
