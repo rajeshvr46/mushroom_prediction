@@ -1,3 +1,4 @@
+import sklearn
 from sklearn.preprocessing import LabelEncoder
 def encode(df):
     encoder =LabelEncoder()
