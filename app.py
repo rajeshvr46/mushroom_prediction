@@ -13,7 +13,7 @@ if upload_file:
     st.header('Your Encoding file has been done')
     data=encode(df)
     st.dataframe(data)
-    model=joblib.load('mushroom.pkl')
+    model=jb.load('mushroom.pkl')
     predict=pd.DataFrame(model.predict(data))
     predict.columns=['results']
     result=predict.replace({0:'Edible',1:'Poisons'})
