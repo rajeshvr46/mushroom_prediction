@@ -1,4 +1,4 @@
-from sklearn.calibration import LabelEncoder
+from sklearn.preprocessing import LabelEncoder
 def encode(df):
     encoder =LabelEncoder()
     for column in range(len(df.columns)):
